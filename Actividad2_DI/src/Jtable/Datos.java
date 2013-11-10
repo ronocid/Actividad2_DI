@@ -10,7 +10,10 @@ public class Datos extends JPanel {
     public Datos() {
         initComponents();
     }
-
+    
+    public String [] datosVector(){
+        return new String[]{nombre.getText(),apellidos.getText(),edad.getText(),deporte.getText(),localidad.getText()};
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

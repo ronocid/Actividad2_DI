@@ -29,8 +29,9 @@ public class Actividad extends javax.swing.JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                Datos pd= new Datos();
+
                if(JOptionPane.showConfirmDialog(null, pd, "Introduzca datos", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE)==JOptionPane.OK_OPTION)
-                   String[] nuevoDato= new String[]{};
+                  modelo.anadirFila(pd.datosVector());
             }
         });
     }

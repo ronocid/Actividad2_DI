@@ -59,7 +59,7 @@ public class ModeloTabla extends AbstractTableModel{
             editable=true;
         else
             editable=false;
-        
+
         return editable;
     }
 }
