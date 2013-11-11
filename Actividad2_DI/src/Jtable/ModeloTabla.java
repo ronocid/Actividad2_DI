@@ -1,4 +1,3 @@
-
 package Jtable;
 
 import java.util.ArrayList;
@@ -53,7 +52,7 @@ public class ModeloTabla extends AbstractTableModel{
         fireTableDataChanged();
     }
     
-    public boolean inCellEditable(int row, int col){
+    public boolean isCellEditable(int row, int col){
         boolean editable;
         if(col==nombreCol.length-1)
             editable=true;
